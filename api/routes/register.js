@@ -33,6 +33,7 @@ router.post('/',upload.single('pic'),(req,res,next)=>{
                 if(err)
                 {
                     return res.status(500).json({
+                        code:500,
                         error:err
                     });
                 }else{
@@ -56,7 +57,8 @@ router.post('/',upload.single('pic'),(req,res,next)=>{
                         .then(result =>{
                             console.log(result);
                             res.status(201).json({
-                                message: 'Review Successfully Submitted',
+                                code:200,
+                                message: 'User Successfully Submitted',
                                 user: result
                                 // {
                                 //     _id: result._id,
@@ -76,6 +78,7 @@ router.post('/',upload.single('pic'),(req,res,next)=>{
                     }).catch(err=>{
                         console.log(err);
                         res.status(500).json({
+                            code:500,
                             error:err
                         });
                     });

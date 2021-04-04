@@ -6,6 +6,9 @@ const bodyParser = require('body-parser');
 
  const register_Routes = require('./api/routes/register');
  const login_Routes = require('./api/routes/login');
+ const post_Routes = require('./api/routes/post');
+ const comment_Routes = require('./api/routes/comment');
+ const vote_Routes = require('./api/routes/vote');
 
 
 
@@ -47,6 +50,9 @@ app.use((req,res,next)=>{
 
 app.use('/register',register_Routes);
 app.use('/login',login_Routes);
+app.use('/post',post_Routes);
+app.use('/comment',comment_Routes);
+app.use('/vote',vote_Routes);
 
 
 app.use((req,res,next) =>{

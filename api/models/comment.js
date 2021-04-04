@@ -4,7 +4,7 @@ const commentSchema = mongoose.Schema({
     _id: mongoose.Schema.Types.ObjectId,
     comment_email: { type: String,required: true},
     post_email: { type: String,required: true},
-    postid: { type: Number, required: true},
+    post_id: { type: Number, required: true},
     commenttxt: {type: String, required: true}
 });
 
