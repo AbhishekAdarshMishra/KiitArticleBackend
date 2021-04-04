@@ -12,7 +12,7 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
 const mongid='mongodb://localhost/kiitprj';
-const mong='mongodb+srv://kiitminor:kit@open@kiitminor.gawin.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
+const mong='mongodb+srv://kiitminor:<password>@kiitminor.gawin.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
 mongoose
   .connect(mongid, { useUnifiedTopology: true, useNewUrlParser: true, useCreateIndex: true })
