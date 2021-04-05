@@ -90,19 +90,6 @@ router.post('/',upload.single('pic'),(req,res,next)=>{
     })
          
 });
-router.get('/:email',(req,res,next) =>{
-        const email=req.params.email;
-        User.find({email:email})
-        .exec()
-        .then(result =>{
-            res.status(200).json(result);
-        })
-        .catch(err =>{
-            console.log(err);
-            res.status(500).json({
-                error:err
-            });
-        });
-        
-    });
+
+
 module.exports = router;
