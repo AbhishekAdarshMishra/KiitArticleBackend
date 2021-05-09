@@ -32,6 +32,7 @@ const bodyParser = require('body-parser');
  const v3_Routes=require('./api/routes/vote_get_postemail_postid_voter')
 
  const search_Routes=require('./api/routes/search_bar')
+ const post_get_tag_Routes=require('./api/routes/post_get_tag')
 
 
  
@@ -103,6 +104,7 @@ app.use('/vote_get_postemail_postid_voter',v3_Routes);
 
 
 app.use('/search_bar',search_Routes);
+app.use('/post_get_tag',post_get_tag_Routes);
 
 
 //app.use('/',);
