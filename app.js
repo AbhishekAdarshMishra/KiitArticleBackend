@@ -34,6 +34,8 @@ const bodyParser = require('body-parser');
  const search_Routes=require('./api/routes/search_bar')
  const post_get_tag_Routes=require('./api/routes/post_get_tag')
 
+  const login_google_api_Routes = require('./api/routes/login_google_api');
+
 
  
 
@@ -105,6 +107,7 @@ app.use('/vote_get_postemail_postid_voter',v3_Routes);
 
 app.use('/search_bar',search_Routes);
 app.use('/post_get_tag',post_get_tag_Routes);
+app.use('/login_google_api',login_google_api_Routes);
 
 
 //app.use('/',);
