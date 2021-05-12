@@ -11,7 +11,8 @@ const userSchema = mongoose.Schema({
     signupas:{type: String, required: true},
     mobno: { type: Number},
     pic:{type: String,required:true},
-    tag:{type:String, required:true}
+    tag:{type:String, required:true},
+    postcount:{type:Number,required:true}
 });
 
 
