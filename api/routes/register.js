@@ -47,7 +47,7 @@ router.post('/',upload.single('pic'),(req,res,next)=>{
                         year:req.body.year,
                         signupas:req.body.signupas,
                         mobno:req.body.mobno,
-                        pic:req.file.path,
+                        pic:"uploads/Abhishek.jpg",//req.file.path,
                         tag:req.body.tag,
                         postcount:req.body.postcount,
                         
